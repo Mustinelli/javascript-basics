@@ -68,12 +68,7 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  strings.sort((a, b) => {
-    if (a.slice(-1) < b.slice(-1)) {
-      return 1;
-    }
-    return 0;
-  });
+  return strings.sort((x, y) => x.charCodeAt(x.length - 1) - y.charCodeAt(y.length - 1));
 };
 
 module.exports = {

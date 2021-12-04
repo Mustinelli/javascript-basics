@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return {name: name, age: age};
+  return { name, age };
 };
 
 const getName = object => {
@@ -44,10 +44,10 @@ const createTalkingPerson = (name, age) => {
   return {
     name: name,
     age: age,
-    intro: Hello => {
-      return 'Hello ${Hi}, my name is ${name} and I am ${age}!';
+    introduce: stranger => {
+      return `Hi ${stranger}, my name is ${name} and I am ${age}!`;
     }
-  }
+  };
 };
 
 module.exports = {
